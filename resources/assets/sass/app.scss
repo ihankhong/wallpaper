@@ -1,0 +1,105 @@
+// Variables
+@import "variables";
+
+.bg {
+  background-color: #{$bg-color};
+}
+
+.bg-white {
+  background-color: #{$bg-white};
+}
+
+.no-bg {
+  background-color: transparent;
+}
+
+.fo-c1 {
+  color: #{$font-color-1};
+}
+
+.fo-c2 {
+  color: #{$font-color-2};
+}
+
+.brandT {
+  color:  #{$btn-color};
+}
+
+.title {
+  color: #576163;
+  display: inline-flex;
+  background-color: #{$bg-color};
+}
+
+.btn-wallpaper {
+  color: #edddc4;
+  background-color: #{$btn-color};
+  border-color: #{$btn-color};
+
+  &:hover {
+    color: #fff;
+  }
+  &:active,
+  &:focus {
+    box-shadow: #{$btn-focus-box-shadow};
+  }
+}
+
+.btn-img:after {
+  content: "";
+  width: 28px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 0.25rem;
+  vertical-align: text-top;
+  background-color: transparent;
+  background-position : center center;
+  background-repeat:no-repeat;
+  background-size: 28px 18px;
+  background-image: url(../images/bird.png);
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper-a {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: static;
+  z-index: 100;
+}
+
+.content-box {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+@media (min-width: #{$grid-md-breakpoints}) {
+  .px-md-35 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+
+  .py-md-35 {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
+  .wrapper-a {
+    position: absolute !important;
+  }
+
+  .title {
+    &.no-bg {
+      background-color: transparent;
+    }
+  }
+}
