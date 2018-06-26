@@ -3,15 +3,31 @@
 $body-bg: #f5f8fa;
 
 // Typography
-$font-family-sans-serif: "Raleway", sans-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-base:  $font-family-sans-serif !default;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // wallpaper
-$bg-white: #fff;
-$bg-color: #ccd4d6;
-$font-color-1: #8b8a8a;
-$font-color-2: #363d3f;
-$btn-color: #342635;
+$white: #fff;
+$white-1: #ccd4d6;
+$gray-1: #8b8a8a;
+$gray-2: #576163;
+$gray-3: #363d3f;
+$dark-gray: #342635;
+$theme-colors: (
+  "wallpaper":  $dark-gray,
+);
+
+@function theme-color($key: "primary") {
+  @return map-get($theme-colors, $key);
+}
+
+$bg-white: $white;
+$bg-color: $white-1;
+$font-color-1: $gray-1;
+$font-color-2: $gray-3;
+$title-color: $gray-2;
+$wallpaper-color: theme-color('wallpaper');
 $btn-focus-box-shadow:  0 0 0 0.2rem rgba(20, 15, 21, .25) !default;
 $grid-md-breakpoints: 768px;

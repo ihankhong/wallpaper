@@ -1,6 +1,10 @@
 // Variables
 @import "variables";
 
+body {
+  font-family: #{$font-family-base};
+}
+
 .bg {
   background-color: #{$bg-color};
 }
@@ -21,23 +25,42 @@
   color: #{$font-color-2};
 }
 
+.px-35 {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.py-35 {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.pt-6 {
+  padding-top: 3.5rem !important;
+}
+
+.pt-65 {
+  padding-top: 3.75rem !important;
+}
+
 .brandT {
-  color:  #{$btn-color};
+  color:  #{$wallpaper-color};
 }
 
 .title {
-  color: #576163;
+  color: #{$title-color};
   display: inline-flex;
+  font-weight: 700;
   background-color: #{$bg-color};
 }
 
 .btn-wallpaper {
   color: #edddc4;
-  background-color: #{$btn-color};
-  border-color: #{$btn-color};
+  background-color: #{$wallpaper-color};
+  border-color: #{$wallpaper-color};
 
   &:hover {
-    color: #fff;
+    color: #{$white};
   }
   &:active,
   &:focus {
@@ -88,8 +111,12 @@
     padding-right: 1.25rem !important;
   }
 
+  .pt-md-35,
   .py-md-35 {
     padding-top: 1.25rem !important;
+  }
+
+  .py-md-35 {
     padding-bottom: 1.25rem !important;
   }
 
