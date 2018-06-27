@@ -53,6 +53,10 @@ body {
   background-color: #ccd4d6;
 }
 
+.title.fs-35 {
+  font-size: 1.25rem;
+}
+
 .btn-wallpaper {
   color: #edddc4;
   background-color: #342635;
@@ -109,6 +113,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.img-link {
+  position: relative;
+}
+
+.img-link .image {
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.img-link:hover .image {
+  opacity: .5;
 }
 
 @media (min-width: 768px) {

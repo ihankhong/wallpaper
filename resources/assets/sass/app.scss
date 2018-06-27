@@ -52,6 +52,10 @@ body {
   display: inline-flex;
   font-weight: 700;
   background-color: #{$bg-color};
+
+  &.fs-35 {
+    font-size: 1.25rem;
+  }
 }
 
 .btn-wallpaper {
@@ -103,6 +107,22 @@ body {
   align-items: center;
   justify-content: space-around;
   display: flex;
+}
+
+.img-link {
+  position: relative;
+
+  .image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  &:hover {
+    .image {
+      opacity: .5;
+    }
+  } 
 }
 
 @media (min-width: #{$grid-md-breakpoints}) {
