@@ -63,9 +63,12 @@ body {
   background-color: #{$wallpaper-color};
   border-color: #{$wallpaper-color};
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: #{$white};
   }
+  
   &:active,
   &:focus {
     box-shadow: #{$btn-focus-box-shadow};
