@@ -118,7 +118,9 @@ body {
     backface-visibility: hidden;
   }
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     .image {
       opacity: .5;
     }
